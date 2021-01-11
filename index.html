@@ -1,378 +1,191 @@
-<head>
-
- 
-
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-</head>
-<style>
-
-		body {
-  background: url('https://images.unsplash.com/photo-1420496368970-d83b063b5b48?fit=crop&fm=jpg&h=700&q=80&w=1225') no-repeat center center;
-  background-size: 1400px 700px;
-  background-position: 30%;
-  background-attachment: fixed;
-}
-
-
-.text {
-  font-family: raleway;
-  font-size: 40px;
-  position: absolute center;
-  text-align: center;
-  padding-left: 0%;
-  color: #000;
-  margin-top: 43px;
-}
-
-.text1 {
-  font-family: raleway;
-  font-size: 21px;
-  text-align: center;
-  margin-top: -20px;
-  color: #000;
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title> Sushant Shinde | Java Developer </title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- Leave those next 4 lines if you care about users using IE8 -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			h1, h2, h3, h4, h5{
+				color:#4A4E69 !important;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			p {
+				color: #4A4E69;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.profile-pic {
+				box-shadow: 0px 4px 6px 2px lightgrey;
+			  border-radius: 50%
+			}
+
+			.m-t-1 {
+				margin-top:1em;
+			}
+
+			.p-t-1 {
+				padding-top:1em;
+			}
+
+
+			.about-me {
+				margin-top:25px;
+			}
+
+			.navbar-default {
+				background-color: #C9ADA7;
+				background: none;
+				border: none;
+				border-radius:0;
+			}
+
+			.repo-row {
+				padding: 65px 10px;
+			}
+
+			.repo-row:nth-child(odd) {
+			  background-color: lightgrey;
+			  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			}
+
+			.vertical-align {
+				display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+
+			@media (max-width: 991px) {
+			    .row.vertical-align {
+			        display: block; /* Turn off the flexible box layout */
+			    }
+			}
+
+			.work-item-img {
+				max-height: 480px;
+				max-width:80%;
+			}
+
+			.row-footer {
+			/*	background-color: lightgrey;
+				-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
+				clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);*/
+				padding: 65px 10px;
+			}
+
+			.linkedin-btn {
+				width:140px;
+				box-shadow: 0px 2px 5px 1px lightgrey;
+				padding: 12px;
+				border-radius: 5px;
+			}
+
+			.btn-launch {
+				width:100%;
+				max-width:200px;
+				background-color: #549657;
+				color:white;
+				box-shadow: 0px 2px 5px 1px darkgrey;
+			}
 
-.image {
-  text-align: center;
-  width: 200px;
-  /* Container's dimensions */
-  
-  height: 200px;
-  -webkit-border-radius: 75%;
-  -moz-border-radius: 75%;
-  box-shadow: 0 0 0 1px #eee;
-  background: url("https://images.unsplash.com/reserve/ysPfhVSzSP2m629CW0mw_selfPortrait.jpg?fit=crop&fm=jpg&h=700&q=80&w=1225") center center no-repeat;
-  background-size: cover;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: -30px;
-  align-content: center;
-}
-
-
-
-.trick {
-  display: inline-block;
-  vertical-align: middle;
-  height: 150px;
-}
+			.btn-launch:hover,
+			.btn-launch:focus {
+				color: white;
+				background: #3d7140;
+			}
 
-.image:hover {
-  box-shadow: 0px 5px 20px .9px #3F3F3F;
-}
+			.techUsed {
+				font-size:54px;
+				padding: 40px 0 0;
+			}
 
-.image:hover {
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
-  -webkit-transition: 1.6s ease-in-out;
-  transition: 1.6s ease-in-out;
-}
+			.techUsed i {
+				margin:0 15px;
+			}
 
+			.toolsUsed {
+				font-size: 100px;
+			  padding: 40px 0;
+			}
 
+			.toolsUsed i {
+				margin:0 15px;
+			}
 
-.trick:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
+			.about {
+				margin-bottom:80px;
+			}
+		</style>
 
-#overlay {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  padding: 0 0 0 0;
-  opacity: 1.0;
-  -webkit-transition: opacity 2.25s ease;
-  -moz-transition: opacity 10.25s ease;
-}
+	</head>
+	<body>
 
-#box:hover #overlay {
-  opacity: 1;
-}
 
+		<div class="container-fluid">
 
+			<section class="about">
+				<div class="text-center" style="margin-top:100px">
+					<img src="profile.jpg" width=200 class="profile-pic">
+					<h1></h1>
+				  <h3></h3>
+				  <h5></h5>
 
+				  <div class="text-center" style="margin:20px">
+				  	<a href="mailto:sushantshinde023@gmail.com" class="" target="_blank">
+				  		Sushant Shinde
+				  	</a>
+				  </div>
+				</div>
+			</section>
 
+			<section class="repos">
 
-.panel-group{
-  width:350px;
-  margin:auto;
-  /*margin:50px 400px 50px 400px;*/
-  max-width:100%;
-}
 
-.panel-heading{
-  background-color:transparent !important;
-}
 
-.title{
-  text-align: center;
-  background-color:transparent;
-  color:#000;
-  font-family:lato;
-  font-weight:300;
-  font-size:15px;
-  max-width:100%;
-}
+			</section>			
 
+			<div class="row row-footer text-center">
+				<div class="col">
+  				<div style="margin:50px;">
+  					<h3 style="margin:50px 0 15px">I'm available for work, get in touch</h3>
+				  	<a href="mailto:sushantshinde023@gmail.com" class="" target="_blank">
+				  		sushantshinde023@gmail.com
+				  	</a>
 
+				  </div>
+				</div>
+			</div>
 
 
-#accordion{
-  background-color: transparent;
-  max-width:100%;
-  margin-bottom:200px;
-}
 
 
+		</div>
 
 
+		<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+		<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- <script src="js/myScripts.js"></script> -->
 
-
-
-.btn-outline {
-  color: inherit;
-  transition: all 1.4s;
-  background-color: transparent;
-}
-/* button CSS */
-
-.btn-danger.btn-outline {
-  margin-top: 9px;
-  background-color: transparent;
-  color: #000;
-  border-color: #000;
-  padding:auto;
-  padding:10px 0px 10px 0px;
-  margin: 1px 5px 1px 0px;
-  width: 100%;
-  text-align:center;
-  font-family: raleway;
-  font-weight: 300;
-  max-width:100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------    Contact Form    ------------*/
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #000;
-  font-size: 15px;
-}
-/* on hover placeholder */
-
-input:hover::-webkit-input-placeholder,
-textarea:hover::-webkit-input-placeholder {
-  color: #fff;
-  font-size: 15px;
-  font-family: raleway;
-}
-
-input:hover:focus::-webkit-input-placeholder,
-textarea:hover:focus::-webkit-input-placeholder {
-  color: #fff;
-  font-family: raleway;
-}
-
-input:hover::-moz-placeholder,
-textarea:hover::-moz-placeholder {
-  color: #fff;
-  font-size: 15px;
-  font-family: raleway;
-}
-
-input:hover:focus::-moz-placeholder,
-textarea:hover:focus::-moz-placeholder {
-  color: #fff;
-  font-family: raleway;
-}
-
-input:hover::placeholder,
-textarea:hover::placeholder {
-  color: #fff;
-  font-size: 15px;
-  font-family: raleway;
-}
-
-input:hover:focus::placeholder,
-textarea:hover:focus::placeholder {
-  color: #fff;
-  font-family: raleway;
-}
-
-input:hover::placeholder,
-textarea:hover::placeholder {
-  color: #fff;
-  font-size: 15px;
-  font-family: raleway;
-}
-
-input:hover:focus::-ms-placeholder,
-textarea:hover::focus:-ms-placeholder {
-  color: #fff;
-  font-family: raleway;
-}
-
-#form {
-  position: relative;
-  width: 100%;
-  margin: 0px auto 0px auto;
-  font-family: raleway;
-}
-
-input {
-  font-family: raleway;
-  font-size: 15px;
-  width: 100%;
-  height: 50px;
-  padding: 0px 12px 0px 12px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  border: solid 1px #eee;
-  border-bottom: none;
-  transition: all 0.9s ease-in-out;
-  -webkit-transition: all 0.9s ease-in-out;
-  -moz-transition: all 0.9s ease-in-out;
-  -ms-transition: all 0.9s ease-in-out;
-}
-
-input:hover {
-  background: #ccc;
-  color: #fff;
-  font-family: raleway;
-}
-
-textarea {
-  width: 100%;
-  max-width: 100%;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #000;
-  font-family: raleway;
-  font-size: 25px;
-  border: solid 1px #eee;
-  transition: all 0.9s ease-in-out;
-  -webkit-transition: all 0.9s ease-in-out;
-  -moz-transition: all 0.9s ease-in-out;
-  -ms-transition: all 0.9s ease-in-out;
-}
-
-textarea:hover {
-  background: #ccc;
-  color: #fff;
-  font-family: raleway;
-}
-
-#submit {
-  width: 100%;
-  padding: 0;
-  font-family: raleway;
-  font-size: 20px;
-  color: #000;
-  outline: none;
-  cursor: pointer;
-  border: solid 1px #eee;
-  border-top: none;
-  margin-bottom: 0px;
-}
-
-#submit:hover {
-  color: #fff;
-  background-color: #ccc;
-}
-
-
-</style>
-
-  <div class="box">
-    <div id="overlay">
-      <div class="image">
-        <div class="trick">
-
-        </div>
-      </div>
-      <ul class="text">Sushant Shinde</ul>
-      <div class="text1">Java Developer (2 Years of Experience)</div>
-
-
-
-
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading " role="tab" id="headingOne">
-      <h4 class="panel-title ">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="" aria-controls="collapseOne">
-          <div class="title  btn btn-danger btn-outline btn-lg">ABOUT Sushant</div>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Sushant has been building websites for aprroximately 2 years. He enjoys making unique websites and web projects. His hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <div class="title btn btn-danger btn-outline btn-lg">SOCIAL</div>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Sushant has been building websites for years. He enjoys making unique websites and web projects. His hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <div class="title btn btn-danger btn-outline btn-lg">CONTACT</div>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-
-        
-        
-                  <form id="form" class="topBefore">
-
-            <input id="name" type="text" placeholder="NAME">
-            <input id="email" type="text" placeholder="E-MAIL">
-            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-            <input id="submit" type="submit" value="Submit Now!">
-
-          </form>
-
-
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
+	</body>
+</html>
